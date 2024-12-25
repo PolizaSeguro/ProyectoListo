@@ -27,6 +27,11 @@ class Server {
 
     // CORS
     this.app.use(cors());
+
+    // Catch-all route to serve index.html for React Router
+    this.app.get('*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
+    });
   }
 
   // Esta configuración se puede tener aquí o como propieda de clase
