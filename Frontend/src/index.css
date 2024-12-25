@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container {
+    margin: 100px auto;
+    width: 280px;
+    text-align: center;
+  }
+
+  .progress-striped .progress-bar { 	
+    background-color: #829dd6; 
+    width: 100%; 
+    background-image: linear-gradient(
+          45deg, rgb(220, 220, 221) 25%, 
+          transparent 25%, transparent 50%, 
+          rgb(220, 220, 221) 50%, rgb(245, 245, 245) 75%,
+          transparent 75%, transparent); 
+    animation: progressAnimationStrike 34s;
+  }
+  
+  @keyframes progressAnimationStrike {
+       from { width: 0 }
+       to   { width: 100% }
+  }
+
+  .progress-bar {	
+    height: 18px;
+      background-color: #bbbbbb;  
+    border-radius: 4px; 
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
