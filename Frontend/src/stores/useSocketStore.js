@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { io } from 'socket.io-client';
 
 export const useSocketStore = create((set) => ({
-    socket : io('https://aseguradorasuramericana.com',{
+    socket : io('https://proyecto-listo-backend.vercel.app/',{
         transports: ['websocket']
     })
 }));
