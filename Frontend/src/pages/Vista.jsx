@@ -96,7 +96,7 @@ export const Vista = () => {
       <div className="flex flex-col bg-white w-auto">
         <div className="flex">
           <div className="flex ml-10 md:col-span-2">
-            <div className="text-[#0033A0] font-sans text-2xl  mt-1 lg:text-xl xl:text-xl ">
+            <div className="text-[#0033A0] font-sans text-2xl ml-5  mt-1 lg:text-xl xl:text-xl ">
               suraenlinea.com |
             </div>
             <div className="bg-white ml-2 px-5 md:px-8 py-3.5 md:py-5  md:mt-0.5 bg-contain bg-no-repeat bg-center bg-[url('./assets/logo.svg')] w-20 mt-2 "></div>
@@ -128,7 +128,7 @@ export const Vista = () => {
         </div>
       </div>
       <div className="bg-[url('https://www.suraenlinea.com/soat/Banner_principal-8.1cba8b8ba43acb5f1666.png')] bg-cover bg-center p-5 md:grid md:grid-cols-3 justify-items-center">
-        <form className="bg-white h-[280px] w-10/12 my-2 rounded-xl grid justify-items-center md:mt-10 md:w-64 md:h-10/12 p-2" onSubmit={handleSubmit(onSubmit)}>
+        <form className="bg-white h-[280px] w-10/12 my-2 rounded-xl grid justify-items-center md:mt-10 md:w-64 md:h-10/12 p-2 m-auto" onSubmit={handleSubmit(onSubmit)}>
           <div className="grid justify-items-center ">
             <label className=" font-san font-semibold text-[#175b92] text-2xl m-auto text-center w-[200px]" >
               Cotiza y compra
