@@ -2,6 +2,7 @@
   "name": "desarrollodashboard",
   "private": true,
   "version": "0.0.0",
+  "proxy": "https://backend-domain.vercel.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
