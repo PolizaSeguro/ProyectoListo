@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { Dashboard } from '../pages/Dashboard'
 import { Vista } from '../pages/Vista'
 import { PrivateRoute } from './PrivateRoute'
@@ -21,7 +21,7 @@ export const AppRouter = () => {
     }, [])
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
             
                 <Route path='/*' element={
@@ -45,6 +45,6 @@ export const AppRouter = () => {
                 } />
                 <Route path='*' element={<h1>404</h1>} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
