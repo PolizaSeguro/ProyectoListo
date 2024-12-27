@@ -15,10 +15,14 @@ class Server {
     this.server = http.createServer(this.app);
     
     // Configuraciones de sockets
-    this.io = socketio(this.server, {
-      /* configuraciones */
+    this.io = socketIo(this.server, {
+      cors: {
+        origin: "*",
+        methods: ["GET", "POST"],
+        allowedHeaders: ["my-custom-header"],
+        credentials: true
+      }
     });
-  }
 
   middlewares() {
     // Desplegar el directorio público
