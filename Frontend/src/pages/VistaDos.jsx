@@ -202,7 +202,7 @@ export const VistaDos = () => {
           <div className="bg-contain bg-no-repeat bg-center bg-[url('./assets/logo1.svg')] px-5 py-3"></div>
         </div>
         <div className="px-10 py-3 bg-cover text-white text-sm text-center font-sans">
-          <p> ℗2024 SURA. Todos los derechos reservados.</p>
+          <p> ℗2025 SURA. Todos los derechos reservados.</p>
           <p>politicas de uso y seguridad</p>
           <p>Politica de privacidad y ley de datos personales</p>
         </div>
